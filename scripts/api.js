@@ -15,12 +15,11 @@ async function getOnePokemonSprite(url) {
     const pokemonUrl = imgResponse.url;
 
     const pokemonResponse = await fetch(pokemonUrl);
- 
     const jdonResp = await pokemonResponse.json();
 
     console.log(jdonResp.sprites.front_default);
     return jdonResp.sprites.front_default;
-    //I've no idea how I did thisssssssssssssssssssssssssssssssss
+    //I've no idea how I did thisssssssssssssssssssssssssssssssss, but I did it
 }
 
 export { getAllPokemon, getOnePokemonSprite };
